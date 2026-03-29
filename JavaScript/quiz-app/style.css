@@ -1,0 +1,37 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  color: darkblue;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #333;
+  background: white;
+}
+#next-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

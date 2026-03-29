@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul id="navMenu">
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Hi, I'm Himajahnavi 👋</h1>
+      <p>I am a beginner web developer learning HTML and CSS.</p>
+      <a href="#projects">See My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! My name is Himajahnavi. I am learning web development from
+        scratch. I enjoy building things for the internet and I am currently
+        studying HTML, CSS, and JavaScript. I love solving problems and creating
+        simple, clean websites.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill-box">HTML5</div>
+        <div class="skill-box">CSS3</div>
+        <div class="skill-box">Flexbox</div>
+        <div class="skill-box">CSS Grid</div>
+        <div class="skill-box">Responsive Design</div>
+        <div class="skill-box">Git & GitHub</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Page</h3>
+          <p>
+            This is my personal portfolio page built using HTML and CSS. It
+            shows who I am and what I can build.
+          </p>
+          <a href="#">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Responsive Nav Menu</h3>
+          <p>
+            A simple navigation menu that works on mobile and desktop screens
+            using Flexbox.
+          </p>
+          <a href="#">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Card Layout</h3>
+          <p>
+            A card layout built with CSS Grid that displays content in a clean
+            and organized way.
+          </p>
+          <a href="#">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Blog Layout</h3>
+          <p>
+            A mobile-first blog layout using semantic HTML elements and media
+            queries.
+          </p>
+          <a href="#">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me!</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Social Icons -->
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+      <p>© 2026 Himajahnavi — Built with HTML & CSS</p>
+    </footer>
+
+    <!-- Hamburger toggle script -->
+    <script>
+      var hamburger = document.getElementById("hamburger");
+      var navMenu = document.getElementById("navMenu");
+
+      hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("open");
+      });
+
+      function closeMenu() {
+        navMenu.classList.remove("open");
+      }
+    </script>
+  </body>
+</html>
