@@ -1,0 +1,86 @@
+body.light {
+  background: white;
+  color: black;
+}
+body.dark {
+  background: #121212;
+  color: white;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: rgb(202, 235, 235);
+  padding: 10px;
+  margin: 0;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+  background: #333;
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: darkblue;
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 12px;
+    margin: 15px auto;
+  }
+
+  button {
+    width: 50%;
+    margin: 8px 0;
+  }
+
+  input {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Card Container */
+.card {
+  background: var(--bg-color); /* Adapts to ThemeContext */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease;
+  text-align: center;
+}
+
+/* Dark mode override for card borders */
+body.dark .card {
+  border-color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Subtle lift effect */
+}
+
+/* Title inside cards */
+.card h3 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--btn-bg);
+  padding-bottom: 10px;
+  color: var(--text-color);
+}
