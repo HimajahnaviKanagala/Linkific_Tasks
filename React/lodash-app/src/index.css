@@ -1,0 +1,85 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background: #f4f6f8;
+}
+
+/* Container */
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Search Input */
+.search {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;   /* center buttons */
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0077ff;
+}
+
+/* User Card */
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+/* Role Title */
+.role-title {
+  margin-top: 20px;
+  color: #0077ff;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
