@@ -15,11 +15,11 @@ function LineChartComp({ data }) {
   return (
     <ResponsiveContainer width="100%" height={300}>
       <LineChart data={data} syncId="dashboard">
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip content={<CustomTooltip />} />
         <Legend />
-        <CartesianGrid/>
         <Line dataKey="sales" stroke="#8884d8" strokeWidth={3} />
         <Line dataKey="users" stroke="#82ca9d" strokeWidth={3} />
         <Brush dataKey="name" height={30} />
