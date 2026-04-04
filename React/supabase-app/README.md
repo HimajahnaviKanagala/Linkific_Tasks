@@ -59,7 +59,7 @@ This project is a full-stack React application integrated with Supabase. It incl
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/HimajahnaviKanagala/Linkific_Tasks/tree/main/React/supabase-app
 cd project-folder
 ```
 
