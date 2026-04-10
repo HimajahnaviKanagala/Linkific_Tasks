@@ -16,7 +16,6 @@ export const authOptions: NextAuthOptions = {
       },
 
       async authorize(credentials) {
-        // 🔴 TEMP (for testing)
         if (
           credentials?.email === "test@example.com" &&
           credentials?.password === "123456"
