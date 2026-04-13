@@ -4,12 +4,10 @@ const SearchBar = React.memo(({ value, onChange }) => {
   return (
     <div className="relative w-full">
       
-      {/* Search Icon */}
       <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
         🔍
       </span>
 
-      {/* Input */}
       <input
         value={value}
         onChange={onChange}
@@ -19,7 +17,6 @@ const SearchBar = React.memo(({ value, onChange }) => {
         outline-none transition duration-200"
       />
 
-      {/* Clear Button */}
       {value && (
         <button
           onClick={() => onChange({ target: { value: "" } })}

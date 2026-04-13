@@ -38,19 +38,15 @@ function ProductList() {
 
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4">
-      {/* Container */}
       <div className="max-w-3xl mx-auto">
-        {/* Search Card */}
         <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
           <SearchBar value={search} onChange={handleSearch} />
 
-          {/* Result Count */}
           <p className="text-sm text-gray-400 mt-2">
             Showing {filteredProducts.length} results
           </p>
         </div>
 
-        {/* List Container */}
         <div className="mt-6 bg-white rounded-2xl shadow-lg p-4">
           <List
             height={500}
@@ -61,8 +57,6 @@ function ProductList() {
             {Row}
           </List>
         </div>
-
-        {/* Footer */}
         <p className="text-center text-sm text-gray-400 mt-6">
           ⚡ Performance optimized with virtualization
         </p>
